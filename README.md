@@ -2,6 +2,9 @@
 
 cTrailers is a simple React application that allows users to search for movies and view their trailers. It fetches movie data from The Movie Database (TMDb) API and utilizes React YouTube for displaying trailers.
 
+
+[View Live Website](https://abhinavkr1708.github.io/Movie-Trailer-App/)
+
 ## Features
 
 - Search for movies by title
