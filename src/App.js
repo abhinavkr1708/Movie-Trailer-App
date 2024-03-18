@@ -120,28 +120,30 @@ function App() {
   return (
     <div className="App">
       {/* Header section */}
-      <header className="center-max-size header">
-        <h2>cTrailers</h2>
-        {/* Search form */}
-        <form className="form" onSubmit={fetchMovies}>
-          <input
-            ref={searchInputRef}
-            className="search"
-            placeholder="Search your Movie/ctrl+k"
-            type="text"
-            id="search"
-            // Update search key state on input change
-            onInput={(event) => setSearchKey(event.target.value)}
-          />
-          <button
-            className="submit-search button"
-            type="button"
-            onClick={fetchMovies}
-          >
-            Search
-          </button>
-        </form>
-      </header>
+      <div className="header-content">
+        <header className="center-max-size header">
+          <h2>cTrailers</h2>
+          {/* Search form */}
+          <form className="form" onSubmit={fetchMovies}>
+            <input
+              ref={searchInputRef}
+              className="search"
+              placeholder="Search your Movie/ctrl+k"
+              type="text"
+              id="search"
+              // Update search key state on input change
+              onInput={(event) => setSearchKey(event.target.value)}
+            />
+            <button
+              className="submit-search button"
+              type="button"
+              onClick={fetchMovies}
+            >
+              Search
+            </button>
+          </form>
+        </header>
+      </div>
       {/* Render movies if there are any, otherwise display a message */}
       {movies.length ? (
         <main>
